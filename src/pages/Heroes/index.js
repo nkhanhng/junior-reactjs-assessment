@@ -1,6 +1,7 @@
 import React, { useState, useEffect, memo } from 'react';
 import PageLayout from 'components/PageLayout';
 import { fetchHeroes } from './control';
+import HerosTable from './HerosTable';
 
 function Heroes() {
   // eslint-disable-next-line no-unused-vars
@@ -15,6 +16,7 @@ function Heroes() {
     <PageLayout>
       <div />
       <span>HEROES</span>
+      <HerosTable data={heroes} />
     </PageLayout>
   );
 }
